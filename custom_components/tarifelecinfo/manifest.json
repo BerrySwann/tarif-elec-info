@@ -1,0 +1,12 @@
+{
+  "domain": "tarifelecinfo",
+  "name": "TarifElecInfo",
+  "version": "0.1.0",
+  "documentation": "https://github.com/BerrySwann/tarif-edf-alerte",
+  "issue_tracker": "https://github.com/BerrySwann/tarif-edf-alerte/issues",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": ["pymupdf>=1.24.0"],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}

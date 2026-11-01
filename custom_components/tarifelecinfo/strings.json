@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TarifElecInfo - ton abonnement",
+        "description": "Indique l'option tarifaire et la puissance souscrite. C'est obligatoire : les prix en dépendent.",
+        "data": {
+          "contrat": "Option tarifaire",
+          "puissance": "Puissance souscrite (kVA)"
+        }
+      },
+      "prix": {
+        "title": "Les prix en vigueur",
+        "description": "{prix}",
+        "data": {}
+      },
+      "notif": {
+        "title": "Où envoyer les alertes",
+        "description": "{details}",
+        "data": {
+          "notify_service": "Téléphone"
+        }
+      }
+    },
+    "error": {
+      "telephone_obligatoire": "Choisis un téléphone dans la liste : plusieurs sont enregistrés."
+    },
+    "abort": {
+      "already_configured": "Cette combinaison est déjà configurée."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TarifElecInfo - réglages",
+        "description": "Téléphone pour les alertes, nombre de jours avant l'annonce, heure du rappel la veille.",
+        "data": {
+          "notify_service": "Téléphone",
+          "jours_avant": "Annoncer combien de jours avant",
+          "heure_veille": "Heure du rappel la veille"
+        }
+      }
+    },
+    "error": {
+      "telephone_obligatoire": "Choisis un téléphone dans la liste : plusieurs sont enregistrés."
+    }
+  }
+}

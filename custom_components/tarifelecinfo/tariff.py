@@ -74,7 +74,7 @@ def lit_grille_edf(puissance: int = 6) -> dict | None:
         if not hp or not hc:
             return None
         resultat = {
-            "source": "grille publique du fournisseur (TTC)",
+            "source": "Grille publique (TTC)",
             "puissance": puissance,
             "hp_kwh": float(hp.replace(",", ".")) / 100.0,
             "hc_kwh": float(hc.replace(",", ".")) / 100.0,
@@ -128,7 +128,7 @@ def lit_data_gouv(contrat: str = "hphc", puissance: int = 6) -> dict | None:
             return None
 
     return {
-        "source": "data.gouv",
+        "source": "Fichier officiel",
         "puissance": puissance,
         "hp_kwh": nombre("PART_VARIABLE_HP_TTC"),
         "hc_kwh": nombre("PART_VARIABLE_HC_TTC"),

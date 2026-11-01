@@ -17,6 +17,9 @@ CONTRAT_LABELS = {
 }
 PUISSANCES = [3, 6, 9, 12, 15, 18, 24, 30, 36]
 
+# libelles courts pour les capteurs (evite les retours a la ligne dans les listes)
+CONTRAT_COURT = {"hphc": "HP/HC (TTC)", "base": "Base (TTC)", "tempo": "Tempo (TTC)"}
+
 DEFAUT_JOURS_AVANT = 9
 DEFAUT_HEURE_VEILLE = 20
 

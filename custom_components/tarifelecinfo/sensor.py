@@ -16,7 +16,7 @@ from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .const import CONF_CONTRAT, CONF_PUISSANCE, CONTRAT_LABELS, DOMAIN, NAME
+from .const import CONF_CONTRAT, CONF_PUISSANCE, CONTRAT_COURT, DOMAIN, NAME
 from .tariff import prochaine_date_effet
 
 
@@ -53,7 +53,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
             InfoAbonnement(entry, "puissance", "Puissance souscrite",
                            options.get(CONF_PUISSANCE), "kVA", "mdi:counter"),
             InfoAbonnement(entry, "option", "Option tarifaire",
-                           CONTRAT_LABELS.get(options.get(CONF_CONTRAT), options.get(CONF_CONTRAT)),
+                           CONTRAT_COURT.get(options.get(CONF_CONTRAT), options.get(CONF_CONTRAT)),
                            None, "mdi:lightning-bolt"),
         ]
     )
